@@ -110,5 +110,5 @@ docker run -ti -v $(pwd):/workspace klee/klee:latest /bin/bash
 ---
 
 ## 6. Contributors & Contact
-* Researcher: 김도영 (Doyoung Kim)[cite: 2]
-* Affiliation: 소프트웨어학과, 성균관대학교[cite: 2]
+* Researcher: 김도영 (Doyoung Kim)
+* Affiliation: 소프트웨어학과, 성균관대학교
