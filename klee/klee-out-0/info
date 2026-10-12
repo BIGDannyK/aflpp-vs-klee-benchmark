@@ -1,0 +1,23 @@
+klee --posix-runtime /workspace/klee/target.bc --sym-stdin 8
+PID: 16
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2026-09-18 06:43:03
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2026-09-18 06:43:04
+Elapsed: 00:00:01
+KLEE: done: explored paths = 5
+KLEE: done: avg. constructs per query = 24
+KLEE: done: total queries = 20
+KLEE: done: valid queries = 0
+KLEE: done: invalid queries = 20
+KLEE: done: query cex = 20
+
+KLEE: done: total instructions = 3130
+KLEE: done: completed paths = 4
+KLEE: done: partially completed paths = 1
+KLEE: done: generated tests = 5

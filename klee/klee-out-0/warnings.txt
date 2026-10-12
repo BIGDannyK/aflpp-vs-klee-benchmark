@@ -1,0 +1,5 @@
+KLEE: WARNING: undefined reference to function: strlen
+KLEE: WARNING: undefined reference to function: strncmp
+KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling external: syscall(4, 140717498728448, 139534772109312) at klee_src/runtime/POSIX/fd.c:530 12
+KLEE: WARNING ONCE: calling __klee_posix_wrapped_main with extra arguments.

@@ -1,0 +1,9 @@
+Error: abort failure
+File: benchmarks/target.c
+Line: 10
+assembly.ll line: 1122
+State: 1
+Stack: 
+	#000001122 in test_func(str=139509002305536) at benchmarks/target.c:10
+	#100001162 in __klee_posix_wrapped_main(argc=1, argv=139856894656512) at benchmarks/target.c:20
+	#200001056 in main(argcPtr=3, argvPtr=140734678597632, envp=140734678597664) at klee_src/runtime/POSIX/klee_init_env.c:244

@@ -1,0 +1,14 @@
+array stdin[8] : w32 -> w8 = symbolic
+array stdin_stat[144] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Eq 0
+                 (And w64 (ReadLSB w64 8 stdin_stat)
+                          2147483647)))
+         (Eq 0
+             (And w64 (ReadLSB w64 56 stdin_stat)
+                      18446744073709486080))
+         (Eq 66 (Read w8 0 stdin))
+         (Eq 85 (Read w8 1 stdin))
+         (Eq 71 (Read w8 2 stdin))
+         (Eq 33 (Read w8 3 stdin))]
+        false)
